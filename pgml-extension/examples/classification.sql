@@ -35,7 +35,7 @@ SELECT * FROM pgml.train('Iris Classifier', algorithm => 'bagging');
 SELECT * FROM pgml.train('Iris Classifier', algorithm => 'extra_trees', hyperparams => '{"n_estimators": 10}');
 SELECT * FROM pgml.train('Iris Classifier', algorithm => 'gradient_boosting_trees', hyperparams => '{"n_estimators": 10}');
 -- Histogram Gradient Boosting is too expensive for normal tests on even a toy dataset
--- SELECT * FROM pgml.train('Iris Classifier', algorithim => 'hist_gradient_boosting', hyperparams => '{"max_iter": 2}');
+-- SELECT * FROM pgml.train('Iris Classifier', algorithm => 'hist_gradient_boosting', hyperparams => '{"max_iter": 2}');
 SELECT * FROM pgml.train('Iris Classifier', algorithm => 'random_forest', hyperparams => '{"n_estimators": 10}');
 -- other
 -- Gaussian Process is too expensive for normal tests on even a toy dataset
